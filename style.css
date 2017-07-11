@@ -1,0 +1,26 @@
+
+/*
+nav {
+  float: right;
+  position:relative;
+  padding-right: 200px;
+  left: 10px;
+}*/
+
+nav {
+  display: block;
+  float: right;
+  height: 40px;
+  padding: 10px 100px 10px 10px;
+  vertical-align: left;
+  font-family: sans-serif;
+}
+
+img {
+  display: block-inline;
+  margin: 2px;
+  padding-left: 100px;
+  padding-top: 10px;
+  width:540px;
+  height: auto;
+}
