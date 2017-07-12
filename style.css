@@ -1,16 +1,31 @@
+* {
+  color: white;
+}
 
-/*
-nav {
-  float: right;
-  position:relative;
-  padding-right: 200px;
-  left: 10px;
-}*/
+h1 {
+  font-family: century;
+  font-size: 3em;
+  padding-left: 10%;
+}
+
+h2 {
+  font-size: 1em;
+  padding-left: 12%;
+}
+
+body {
+  background-color: black;
+  font: white;
+}
+
+i {
+  color: white;
+}
 
 nav {
   display: block;
   float: right;
-  height: 40px;
+  height: 2em;
   padding: 10px 100px 10px 10px;
   vertical-align: left;
   font-family: sans-serif;
@@ -24,3 +39,14 @@ img {
   width:540px;
   height: auto;
 }
+
+@media only screen and (min-width: 640px) {
+  .heading-group-h1 {
+    padding: .1em .1em .1em 2em;
+    float: none;
+  }
+
+  @media only screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
