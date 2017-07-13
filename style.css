@@ -1,26 +1,35 @@
 * {
-  color: white;
+  /*color: white;*/
 }
 
 h1 {
   font-family: century;
-  font-size: 3em;
+  font-family: sans-serif;
+  font-size: 2em;
   padding-left: 10%;
 }
 
 h2 {
   font-size: 1em;
   padding-left: 12%;
+  font-family: sans-serif;
 }
 
 body {
-  background-color: black;
+  /*background-color: black;*/
   font: white;
 }
 
-i {
-  color: white;
+i {/*hamburger
+  /*color: white;*/
 }
+
+
+.icon-menu {
+  font-size: 3em;
+  float: right;
+}
+
 
 nav {
   display: block;
@@ -30,6 +39,15 @@ nav {
   vertical-align: left;
   font-family: sans-serif;
 }
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 img {
   display: block-inline;
