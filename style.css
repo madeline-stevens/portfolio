@@ -25,8 +25,8 @@ i {/*hamburger
 }
 
 
-.icon-menu {
-  font-size: 3em;
+.list {
+  font-size: 1em;
   float: right;
 }
 
@@ -54,7 +54,7 @@ img {
   margin: 2px;
   padding-left: 100px;
   padding-top: 10px;
-  width:540px;
+  width: 40%;
   height: auto;
 }
 
@@ -63,8 +63,17 @@ img {
     padding: .1em .1em .1em 2em;
     float: none;
   }
+}
 
-  @media only screen and (min-width: 640px) {
-  .icon-menu {
+@media (min-width: 800px) {
+  nav i.fa.fa-bars{
+  display:none;
+ }
+}
+@media (max-width: 800px) {
+  .main-nav ul {
     display: none;
+    padding: 1px;
+    clear: both;
   }
+}

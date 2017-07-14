@@ -1,16 +1,23 @@
 'use strict';
 
-//view object, to hold all our functions for dynamic updates and project-related event handlers
-var projectView = {};
-//
-
-//click handlers....selector string?
-projectView.handleMainNav = function() {
+//click handlers....selector string? clicking between home and about
+projectView.handleMainNav = function(){
   $('.tab').on('click', function(){
     $('.tab-content').hide();
     $('#' + $(this).attr('data-content')).show();
-  })
+    console.log('click?')
+  });
+
 }
+
+$(function() {
+ $('.fa-bars').on('click',function(e) {
+   e.preventDefault();
+   $('.list').slideToggle();
+ });
+
+ $('#home').css('display', 'block');
+});
 
 // $('.main-nav .tab:first').click();//this triggers a click on the first .tab element to set up the the page.
 
