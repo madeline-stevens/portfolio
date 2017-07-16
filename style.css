@@ -1,5 +1,6 @@
 * {
-  /*color: white;*/
+  color: white;
+  max-width: 960%em;
 }
 
 h1 {
@@ -16,7 +17,7 @@ h2 {
 }
 
 body {
-  /*background-color: black;*/
+  background-color: black;
   font: white;
 }
 
@@ -52,7 +53,7 @@ a {
 img {
   display: block-inline;
   margin: 2px;
-  padding-left: 100px;
+  padding-left: 50px;
   padding-top: 10px;
   width: 40%;
   height: auto;
