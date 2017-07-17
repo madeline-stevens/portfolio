@@ -1,5 +1,5 @@
 * {
-  color: white;
+  /*color: white;*/
   max-width: 960%em;
 }
 
@@ -17,11 +17,11 @@ h2 {
 }
 
 body {
-  background-color: black;
+  /*background-color: black;*/
   font: white;
 }
 
-i {/*hamburger
+i {
   /*color: white;*/
 }
 
@@ -68,12 +68,18 @@ img {
 
 @media (min-width: 800px) {
   nav i.fa.fa-bars{
-  display:none;
+  display: none;
+ }
+
+ ul.list {
+   /*display:inherit;*/
+   visibility:visible;
  }
 }
+
 @media (max-width: 800px) {
   .main-nav ul {
-    display: none;
+    /*display: none;*/
     padding: 1px;
     clear: both;
   }
