@@ -1,5 +1,5 @@
 * {
-  /*color: white;*/
+  color: white;
   max-width: 960%em;
 }
 
@@ -17,12 +17,12 @@ h2 {
 }
 
 body {
-  /*background-color: black;*/
+  background-color: black;
   font: white;
 }
 
 i {
-  /*color: white;*/
+  color: white;
 }
 
 
@@ -72,7 +72,7 @@ img {
  }
 
  ul.list {
-   /*display:inherit;*/
+   display:inherit;
    visibility:visible;
  }
 }
