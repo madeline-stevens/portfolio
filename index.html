@@ -3,23 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/icons.css">
+    <link rel="stylesheet" href="style/layout.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
     <title>Portfolio</title>
 
     <script id="articleData" type="text/x-handlebars-template">
-<article data-category="{{category}}" data-author="{{author}}">
+<article id="projectStuff">
     <header>
-      <h1>{{title}}</h1>
-      <div class="byline">
-        By <address><a href="{{authorUrl}}">{{author}}</a></address>
-        published <time pubdate datetime="2000-01-01">{{PublishedOn}}</time>
-      </div>
+      <h1>{{{titleOfProject}}}</h1>
+      <p>{{{dateOfProject}}}</p>
     </header>
-    <section class="article-body">{{{body}}}</section>
-    <a href="#" class="read-on">Read on &rarr;</a>
+    <p> {{{description}}}</p>
   </article>
 </script>
 
@@ -42,7 +41,7 @@
         </nav>
       </header>
       <main>
-      <section id="projects">
+      <section id="projects" class="tab-content"> <!--to do: compile handlbars in JS-->
         <img id="left" src="images/Screen Shot 2017-07-10 at 11.07.03 PM.png"/>
         <img id="center" src=" "/>
         <img id="right" src=" "/>
@@ -52,20 +51,19 @@
               About me:
             </header>
             <section>
-              <h1>Some of my intrests:</h1>
+              <h1>Some of my hobbies:</h1>
               <ul>
                 <li>Coding</li>
                 <li>Sharing what I've learned</li>
                 <li>Hanging with my family</li>
-
               </ul>
             </section>
     <footer>
       <p>&copy &bull; madelinerstevens.com</p>
     </footer>
-    <script type="text/javascript" src="projectView.js"></script>
-    <script type="text/javascript" src="rawData.js"></script>
-    <script type="text/javascript" src="project.js"></script>
+    <script type="text/javascript" src="scripts/projectView.js"></script>
+    <script type="text/javascript" src="scripts/rawData.js"></script>
+    <script type="text/javascript" src="scripts/project.js"></script>
     <script src="https://use.fontawesome.com/9df1bf3907.js"></script>
   </body>
 </html>

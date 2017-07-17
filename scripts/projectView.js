@@ -1,23 +1,25 @@
 'use strict';
 
+var projectView = {};
+
 //click handlers....selector string? clicking between home and about
 projectView.handleMainNav = function(){
   $('.tab').on('click', function(){
-    $('.tab-content').hide();
-    $('#' + $(this).attr('data-content')).show();
+    $('.tab-content').hide();//hide ?
+    $('#' + $(this).attr('data-content')).show(); //this is showing about
     console.log('click?')
   });
-
 }
 
 $(function() {
- $('.fa-bars').on('click',function(e) {
+ $('.fa-bars').on('click',function(e){
    e.preventDefault();
    $('.list').slideToggle();
- });
 
+ });
  $('#home').css('display', 'block');
 });
+
 
 // $('.main-nav .tab:first').click();//this triggers a click on the first .tab element to set up the the page.
 

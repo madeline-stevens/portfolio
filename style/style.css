@@ -21,8 +21,8 @@ body {
   font: white;
 }
 
-i {/*hamburger
-  /*color: white;*/
+i {
+  color: white;
 }
 
 
@@ -68,12 +68,18 @@ img {
 
 @media (min-width: 800px) {
   nav i.fa.fa-bars{
-  display:none;
+  display: none;
+ }
+
+ ul.list {
+   display:inherit;
+   visibility:visible;
  }
 }
+
 @media (max-width: 800px) {
   .main-nav ul {
-    display: none;
+    /*display: none;*/
     padding: 1px;
     clear: both;
   }
