@@ -1,9 +1,9 @@
 'use strict';
 
 //view object, to hold all our functions for dynamic updates and project-related event handlers
-var projectView = [];
+// var projectView = [];
 
-function Article (rawDataObj) {
+function Project (rawDataObj) { //mimicking lab, which used Article
   this.author = rawDataObj.author;
   this.authorUrl = rawDataObj.authorUrl;
   this.title = rawDataObj.title;
@@ -12,7 +12,9 @@ function Article (rawDataObj) {
   this.publishedOn = rawDataObj.publishedOn;
 }
 
-// Article.prototype.toHtml = function(){
+
+Project.prototype.toHtml = function(){
+  let template = Handlebars.compile($('#article-template').text());
 //   // TODO: Use handlebars to render your articles.
 //   //       - Get your template from the DOM.
 //   //       - Now "compile" your template with Handlebars.
