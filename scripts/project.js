@@ -15,38 +15,37 @@ function Project (rawDataObj) { //mimicking lab, which used Article
 
 Project.prototype.toHtml = function(){
   let template = Handlebars.compile($('#article-template').text());
-//   // TODO: Use handlebars to render your articles.
-//   //       - Get your template from the DOM.
-//   //       - Now "compile" your template with Handlebars.
-//
-//   var newArt = {
-//     title: this.title,
-//     author: this.author,
-//     body: this.body,
-//     publishedOn: this.publishedOn,
-//     category: this.category,
-//   }
-//
-//   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
-//     this.publishStatus = this.publishedOn ? `published ${this.daysAgo} days ago` : '(draft)';
-//
-//     // TODO: Use the function that Handlebars gave you to return your filled-in html template for THIS article.
-//     var articleData = $('#articleData').html();
-//     var compile = Handlebars.compile(articleData);
-//     var newArticle = compile(newArt);
-//     $('#articles').append(newArticle)
-//   };
-//
-//   rawData.sort(function(a,b) {
-//     return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-//   });
-//
-//   rawData.forEach(function(articleObject) {
-//     articles.push(new Article(articleObject));
-//   });
-//
-//   articles.forEach(function(article){
-//     $('#articles').append(article.toHtml());
-//   });
+.......
 
-// var busmall = new project('busmall', 'images/Screen Shot 2017-07-10 at 11.07.03 PM.png');
+
+
+Project.loadAll = function (rawData) {
+  rawData.sort(function(a,b) {
+    return (new Date(b.publishedOn)) - (new Data(a.publishedOn));
+  });
+  rawData.forEach(function(ele){
+    Project.all.push(new Article(ele));
+  })
+}
+
+const successCallBack = function(data){
+  console.log(data)
+  localStorage.setItem('rawData', JSON.stringify(data))//JSON.stringify is what looks at each object's key/value pair and puts quotes around them
+
+  Project.loadAll(data)
+  articleView.initIndexPage();//this need to go here in portfolio instead of within the else statement
+}
+
+const errorCallBack = function(err){
+  console.log(err)
+}
+
+Project.fetchAll = function () {
+  if (localStorage.rawData){
+    Project.loadAll(JSON.parse(localStorage.rawData));//JSON.parse is what looks for the key/value pairs?
+    projectView.initIndexPage();
+  } else {
+    $.getJSON('rawData')
+      .then(successCallBack, errorCallBack)
+  }
+}
