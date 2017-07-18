@@ -59,7 +59,7 @@ img {
   height: auto;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 800px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
@@ -71,16 +71,16 @@ img {
   display: none;
  }
 
- ul.list {
-   display:inherit;
-   visibility:visible;
+ /*ul.list {
+   display: block;*/
+
  }
 }
 
 @media (max-width: 800px) {
   .main-nav ul {
-    /*display: none;*/
+    display: block;
     padding: 1px;
-    clear: both;
+    clear:both;
   }
 }
