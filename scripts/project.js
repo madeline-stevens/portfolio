@@ -42,7 +42,7 @@ const errorCallBack = function(err){
 
 Project.fetchAll = function () {
   if (localStorage.rawData){
-    Project.loadAll(JSON.parse(localStorage.rawData));//JSON.parse is what looks for the key/value pairs?
+    Project.loadAll(JSON.parse(localStorage.rawData));//JSON.parse is what looks for the key/value pairs? 
     projectView.initIndexPage();
   } else {
     $.getJSON('rawData')

@@ -19,6 +19,7 @@ h2 {
 body {
   background-color: black;
   font: white;
+  padding: 3%;
 }
 
 i {
@@ -80,7 +81,7 @@ img {
 @media (max-width: 800px) {
   .main-nav ul {
     display: block;
-    padding: 1px;
+    padding: 1em;
     clear:both;
   }
 }
