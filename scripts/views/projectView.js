@@ -2,23 +2,27 @@
 
 var projectView = {};
 
+function hideAll() {
+  $('#projects').siblings().hide()
+}
+
 //click handlers....selector string? clicking between home and about
 projectView.handleMainNav = function(){
   $('.tab').on('click', function(){
-    $('.tab-content').hide();//hide ?
+    $('.tab-content').hide();
     $('#' + $(this).attr('data-content')).show(); //this is showing about
     console.log('click?')
   });
 }
 
-$(function() {
- $('.fa-bars').on('click',function(e){
+ //
+ $('.main-nav').on('click','li', function(e){
    e.preventDefault();
-   $('.list').slideToggle();
+   $('.main-nav').slideToggle();
 
  });
  $('#home').css('display', 'block');
-});
+
 
 //where the setTeasers function would go
 
