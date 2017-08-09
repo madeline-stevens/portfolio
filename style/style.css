@@ -19,6 +19,8 @@ h2 {
 body {
   background-color: black;
   font: white;
+  padding: 2em;
+
 }
 
 i {
@@ -71,10 +73,9 @@ img {
   display: none;
  }
 
- /*ul.list {
-   display: block;*/
+ ul.list {
+   display: block;
 
- }
 }
 
 @media (max-width: 800px) {
