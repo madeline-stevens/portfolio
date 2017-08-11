@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
@@ -10,19 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-    <title>Portfolio</title>
 
-    <script id="articleData" type="text/x-handlebars-template">
-<article id="projectStuff">
-    <header>
-      <h1>{{{titleOfProject}}}</h1>
-      <p>{{{dateOfProject}}}</p>
-    </header>
-    <p> {{{description}}}</p>
-  </article>
-</script>
-
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>
+        <a href="{{html_url}}" target="_blank"><h3{{name}}</h3></a>
+        <p>Description: {{{description}}}</p>
+        <p>Language: {{{Language}}}</p>
+        <p>Created: {{{created_at}}}</p>
+        <p>Last updated: {{{updated_at}}}</p>
+      </li>
+    </script>
   </head>
+
   <body>
     <header>
       <h1>
@@ -41,25 +41,26 @@
         </nav>
       </header>
       <main>
-      <section id="projects" class="tab-content"> <!--to do: compile handlbars in JS-->
-        <img id="left" src="images/Screen Shot 2017-07-10 at 11.07.03 PM.png"/>
-        <img id="center" src=" "/>
-        <img id="right" src=" "/>
-      </section>
+
       <section id="about" class="tab-content">
             <header>
               About me:
             </header>
             <section>
-              <h1>Some of my hobbies:</h1>
               <ul>
                 <li>Coding</li>
                 <li>Sharing what I've learned</li>
-                <li> </li>
+                <li>pug lover</li>
               </ul>
             </section>
     <footer>
       <p>&copy &bull; madelinerstevens.com</p>
+      <div class="socialmedia">
+              <ul>
+                <li><a href="https://twitter.com/_madtweets" target="_blank"<i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/madhubs" target="_blank"<i class="fa fa-github-square" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/madelinerosestevens/" target="_blank"<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+            </div>
     </footer>
     <!--vendor scripts-->
     <script src="https://use.fontawesome.com/9df1bf3907.js"></script>
@@ -68,6 +69,6 @@
     <script type="text/javascript" src="scripts/projectView.js"></script>
     <script type="text/javascript" src="scripts/rawData.js"></script>
     <script type="text/javascript" src="scripts/project.js"></script>
-    <script> projectView.initIndexPage </script>
+    <!-- <script> projectView.initIndexPage </script> -->
   </body>
 </html>

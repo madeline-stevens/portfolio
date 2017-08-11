@@ -1,5 +1,5 @@
 * {
-  color: white;
+  /*color: white;*/
   max-width: 960%em;
 }
 
@@ -17,14 +17,14 @@ h2 {
 }
 
 body {
-  background-color: black;
-  font: white;
+  /*background-color: black;*/
+  /*font: white;*/
   padding: 2em;
 
 }
 
 i {
-  color: white;
+  /*color: white;*/
 }
 
 
