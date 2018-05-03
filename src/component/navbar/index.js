@@ -1,0 +1,1 @@
+//this is what the user sees after successfully logging in. they seel oginout, settigns, the create new image/dashboard button

@@ -1,0 +1,1 @@
+//this is the page uses see when they click on settings, they are then prompted to create a profile (name, bio, avatar upload)
