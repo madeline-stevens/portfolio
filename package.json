@@ -9,7 +9,10 @@
     "express-request-proxy": "^2.0.0",
     "pg": "^7.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
